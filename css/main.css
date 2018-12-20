@@ -16,15 +16,6 @@ body,html { height: 100%; width: 100%; margin:0; -webkit-box-sizing: border-box;
     .right .cover { position: relative; } 
         .right .quote { position: absolute; top: 0; background: rgba(255,255,255,0.5); border: 1px solid transparent; border-radius: 5px; padding: 5px; }
 
-.right .desc {
-    position: absolute;
-    top: 0;
-    background: rgba(177,177,177,0.5);
-    height: 100%;
-    width: 100%;
-    padding: 15%;
-}
-
 /* CONTACT */
 .contact {
     padding: 100px;
@@ -41,6 +32,7 @@ body,html { height: 100%; width: 100%; margin:0; -webkit-box-sizing: border-box;
   }
   
   .carousel:hover .slide:after,
+  .carousel:hover .slide:before,
   .carousel:hover .counter,
   .carousel:hover .slide .desc
   {
@@ -51,7 +43,7 @@ body,html { height: 100%; width: 100%; margin:0; -webkit-box-sizing: border-box;
     float: right;
     position: absolute;
     z-index: 1;
-    background-color: #eee;
+    background-color: #fff;
     text-align: center;
     -webkit-transition: opacity 0.4s;
     -o-transition: opacity 0.4s;
@@ -60,32 +52,14 @@ body,html { height: 100%; width: 100%; margin:0; -webkit-box-sizing: border-box;
     height: 100%;
     width: 100%;
   }
-  
-  .slide .desc {
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    font-size: 14px;
-    font-weight: 300;
-    z-index: 12;
-    opacity: 0;
-    -webkit-transition: opacity 0.3s;
-    -o-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-    text-shadow: 0 0 1px #000;
-    text-align: left;
-    padding: 25px;
+
+  .slide img {
+    height: 70%;
   }
   
   .slide .desc .text {
-    width: 60%;
     font-size: 20px;
-    background: #fff;
-    padding: 15px;
-    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-  }
+  } 
   
   .slide:after {
     content: attr(slide);
@@ -305,7 +279,12 @@ body,html { height: 100%; width: 100%; margin:0; -webkit-box-sizing: border-box;
     .slide .desc h3 {
         margin-top: 0;
     }
-    .text { 
-        display: none;
+
+    .carousel {
+      overflow: initial;
+    }
+    .slide .desc .text {
+      font-size: 14px;
+      padding-bottom: 5px;
     }
   }
