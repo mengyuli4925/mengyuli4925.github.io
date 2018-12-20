@@ -56,9 +56,14 @@ body,html { height: 100%; width: 100%; margin:0; -webkit-box-sizing: border-box;
   .slide img {
     height: 70%;
   }
+
+  .slide .desc h3 {
+    margin-top: 0;
+  }
   
   .slide .desc .text {
-    font-size: 20px;
+    font-size: 18px;
+    padding: 0 3px;
   } 
   
   .slide:after {
@@ -70,34 +75,34 @@ body,html { height: 100%; width: 100%; margin:0; -webkit-box-sizing: border-box;
     -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
     width: 100%;
-    height: 80px;
-    opacity: 0;
+    height: 40px;
+    opacity: 1;
     background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5)));
     background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
     background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
     text-align: left;
     /* text-indent: 549px; */
-    line-height: 101px;
-    font-size: 25px;
-    color: rgba(255, 255, 255, 0.9);
+    line-height: 45px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1.9);
     text-shadow: 0 0 1px #000;
-    padding-left: 15px;
+    padding-left: 20px;
   }
   
   .counter {
     position: absolute;
-    bottom: 20px;
-    /* right: 1px; */
+    bottom: 8px;
+    right: 1px;
     left: 16px;
     height: 20px;
     width: 60px;
     z-index: 2;
     text-align: center;
-    color: #fff;
+    color: #000;
     line-height: 21px;
-    font-size: 25px;
-    opacity: 0;
+    font-size: 20px;
+    opacity: 1;
     -webkit-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
@@ -286,5 +291,18 @@ body,html { height: 100%; width: 100%; margin:0; -webkit-box-sizing: border-box;
     .slide .desc .text {
       font-size: 14px;
       padding-bottom: 5px;
+    }
+
+    .counter {
+      top: 12px;
+      text-align: right;
+      left: unset;
+    }
+    .slide:after {
+      background: none;
+      right: 30px;
+      left: unset;
+      text-align: right;
+      top: 0; 
     }
   }
