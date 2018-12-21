@@ -2,12 +2,12 @@ body,html { height: 100%; width: 100%; margin:0; -webkit-box-sizing: border-box;
 
 .container { display: -webkit-box; display: -ms-flexbox; display: flex;  margin: auto; height: 80%; padding: 0 50px;} 
   .container .header a { text-decoration: none; color: #000}
-    .left { min-width: 400px; padding: 5px; } 
+    .left { min-width: 400px; padding: 5px; font-size: 18px;} 
         .header { text-align: center; } 
             .header img { width: 50%; }
 
 .links { padding-left: 20%; } 
-    .navs a { display: block; text-decoration: none; color: #000; padding: 5px; } 
+    .navs a { display: block; text-decoration: none; color: #000; padding: 5px; font-size: 15px; } 
     .navs a:hover, 
     .navs a.active { color: rgb(11, 47, 155);font-size: 25px;}
 
@@ -237,7 +237,7 @@ body,html { height: 100%; width: 100%; margin:0; -webkit-box-sizing: border-box;
   (min-device-width: 768px) and (max-device-width: 1024px) {
     #nav-icon {
       display: inline;
-        right: 30px;
+        right: 15px;
         position: absolute;
     }
     .left { 
